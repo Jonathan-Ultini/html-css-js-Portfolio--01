@@ -1,5 +1,7 @@
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
+/* Global styles */
 * {
   padding: 0;
   margin: 0;
@@ -8,20 +10,24 @@
   box-sizing: border-box;
 }
 
+/* Image styles */
 img {
   width: 100%;
   display: flex;
 }
 
+/* Anchor tag styles */
 a {
   text-decoration: none;
 }
 
+/* Body styles */
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #18181b;
 }
 
+/* Navigation bar styles */
 nav {
   max-width: 1200px;
   margin: auto;
@@ -32,10 +38,12 @@ nav {
   gap: 2rem;
 }
 
+/* Logo section styles */
 .nav-logo {
   max-width: 100px;
 }
 
+/* Navigation links styles */
 .nav-links {
   list-style: none;
   display: flex;
@@ -43,12 +51,14 @@ nav {
   gap: 3rem;
 }
 
+/* Individual link styles */
 .link a {
   position: relative;
   padding-bottom: 0.75rem;
   color: #fff;
 }
 
+/* Hover effect for links */
 .link a::after {
   content: "";
   position: absolute;
@@ -64,6 +74,7 @@ nav {
   width: 70%;
 }
 
+/* Button styles */
 .btn {
   padding: 1rem 2rem;
   font-size: 1rem;
@@ -71,7 +82,7 @@ nav {
   background-color: #1d4ed8;
   border-radius: 5px;
   cursor: pointer;
-  transition: all 0.3 ease;
+  transition: all 0.3s ease;
 }
 
 .btn:hover {
