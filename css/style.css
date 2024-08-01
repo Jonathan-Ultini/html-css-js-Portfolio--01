@@ -93,10 +93,14 @@ nav {
 header {
   position: relative;
   padding-top: 2rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 2rem;
+}
+
+header .content {
+  flex: 1 1 45%;
 }
 
 header .content h4 {
@@ -125,6 +129,7 @@ header .content p {
 }
 
 header .image {
+  flex: 1 1 45%;
   position: relative;
 }
 
@@ -157,8 +162,8 @@ section .header {
 
 .features {
   margin-top: 4rem;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
 }
 
@@ -168,6 +173,7 @@ section .header {
   border: 2px solid transparent;
   border-radius: 15px;
   transition: all 0.3s ease;
+  flex: 1 1 calc(25% - 2rem);
 }
 
 .features .card:hover {
@@ -215,8 +221,8 @@ section .header {
 
 .pricing {
   margin-top: 4rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
 }
 
@@ -228,6 +234,7 @@ section .header {
   border: 2px solid transparent;
   border-radius: 15px;
   transition: all 0.3s ease;
+  flex: 1 1 calc(33.333% - 2rem);
 }
 
 .pricing .card:hover {
@@ -278,12 +285,15 @@ section .header {
   border-color: #1e40af;
 }
 
-
 footer {
   position: relative;
-  display: grid;
-  grid-template-columns: 400px repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
+}
+
+footer .column {
+  flex: 1 1 calc(25% - 2rem);
 }
 
 footer .column .logo {
