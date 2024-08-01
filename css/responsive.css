@@ -1,66 +1,86 @@
+/* Media query per schermi con larghezza inferiore a 900px */
 @media (width < 900px) {
+
+  /* Nasconde i collegamenti di navigazione */
   .nav-links {
     display: none;
   }
 
+  /* Cambia la disposizione dell'header a colonna (verticale) */
   header {
     flex-direction: column;
   }
 
+  /* Sposta l'immagine dell'header sopra il contenuto */
   header .image {
     order: -1;
   }
 
+  /* Cambia la disposizione delle caratteristiche a colonna */
   .features {
     flex-direction: column;
   }
 
+  /* Le card delle caratteristiche occupano tutta la larghezza disponibile */
   .features .card {
     flex: 1 1 100%;
   }
 
+  /* Cambia la disposizione dei card dei prezzi a colonna */
   .pricing {
     flex-direction: column;
   }
 
+  /* Le card dei prezzi occupano tutta la larghezza disponibile */
   .pricing .card {
     flex: 1 1 100%;
   }
 
+  /* Cambia la disposizione del footer a colonna */
   footer {
     flex-direction: column;
   }
 
+  /* Le colonne del footer occupano tutta la larghezza disponibile */
   footer .column {
     flex: 1 1 100%;
   }
 }
 
+/* Media query per schermi con larghezza inferiore a 600px */
 @media (width < 600px) {
+
+  /* Nasconde l'elemento decorativo prima dell'immagine dell'header */
   header .image::before {
     display: none;
   }
 
+  /* Cambia la disposizione delle caratteristiche a colonna */
   .features {
     flex-direction: column;
   }
 
+  /* Le card delle caratteristiche occupano tutta la larghezza disponibile */
   .features .card {
     flex: 1 1 100%;
   }
 
+  /* Cambia la disposizione dei card dei prezzi a colonna */
   .pricing {
     flex-direction: column;
   }
 
+  /* Le card dei prezzi occupano tutta la larghezza disponibile */
   .pricing .card {
     flex: 1 1 100%;
   }
 
+  /* Cambia la disposizione del footer a colonna */
   footer {
     flex-direction: column;
   }
 
+  /* Le colonne del footer occupano tutta la larghezza disponibile */
   footer .column {
     flex: 1 1 100%;
   }
